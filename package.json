@@ -1,8 +1,13 @@
 {
-  "name": "custom-form-react",
-  "version": "0.1.0",
-  "private": true,
+  "name": "custom-form-dynamic",
+  "version": "1.1.2",
+  "author": "weverton",
+  "private": false,
   "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
     "@mdi/js": "^6.6.95",
     "@mdi/react": "^1.5.0",
     "@testing-library/jest-dom": "^5.14.1",
@@ -22,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
