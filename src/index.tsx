@@ -1,11 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import reportWebVitals from "./reportWebVitals";
-import "antd/dist/antd.css";
+import TestComp from './components/TestComp'
+import TestComp2 from './components/TestComp2'
+import CustomDynamicForm from './components/CustomDynamicForm'
 
-ReactDOM.render(
-  <React.StrictMode></React.StrictMode>,
-  document.getElementById("root")
-);
-
-reportWebVitals();
+export { TestComp, TestComp2, CustomDynamicForm }
