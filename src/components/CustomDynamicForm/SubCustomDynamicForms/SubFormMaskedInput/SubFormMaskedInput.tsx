@@ -1,7 +1,7 @@
-import { Form } from "antd";
-import { MaskedInput } from "antd-mask-input";
-import * as React from 'react';
-import { ExtraStringField } from "..";
+import { Form } from 'antd'
+import { MaskedInput } from 'antd-mask-input'
+import * as React from 'react'
+import { ExtraStringField } from '..'
 
 interface Props {
   field: Models.CustomDynamicData.Field;
@@ -31,14 +31,14 @@ const SubFormMaskedInput: React.FC<Props> = ({ field, disableAll, key }) => {
           disabled={disableAll}
           placeholder={`Informe ${field.label.toLowerCase()}`}
           autoComplete="off"
-          mask={field.mask || ""}
+          mask={field.mask || ''}
         />
       </Form.Item>
       {field.extra_name && field.extra_label && (
         <ExtraStringField field={field} disableAll={disableAll} />
       )}
     </>
-  );
-};
+  )
+}
 
-export default SubFormMaskedInput;
+export default SubFormMaskedInput

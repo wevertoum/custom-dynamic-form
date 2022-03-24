@@ -1,1 +1,1 @@
-export { default } from "./SubFormNumber";
+export { default } from './SubFormNumber'

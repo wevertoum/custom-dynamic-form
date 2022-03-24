@@ -9,9 +9,9 @@ import {
   SubFormList,
   SubFormString,
   SubFormMultiCheck,
+  SubFormMaskedInput,
+  SubFormAutoCompleteApi,
 } from '..'
-import SubFormAutoCompleteApi from '../SubFormAutoCompleteApi'
-import SubFormMaskedInput from '../SubFormMaskedInput'
 
 interface Props {
   field: Models.CustomDynamicData.Field
