@@ -5,7 +5,7 @@ export function useGetAutoComplete(route: string, token: string) {
   return useCallback(
     async <O extends Object>(params?: O, headers: any = {}) => {
       return await axios.get<Utils.IPage<any>>(
-        `/${route}/`,
+        route,
         {
           params,
           headers: {
