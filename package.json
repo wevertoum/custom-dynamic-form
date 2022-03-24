@@ -1,6 +1,6 @@
 {
   "name": "custom-form-dynamic",
-  "version": "1.1.19",
+  "version": "1.1.20",
   "description": "um pacote que tem um form ant design maneirasso",
   "author": "weverton",
   "license": "Apache-2.0",
@@ -26,8 +26,8 @@
     "react-dom": "^17.0.2"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.42",
