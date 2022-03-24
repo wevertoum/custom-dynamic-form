@@ -1,6 +1,4 @@
-/// <reference types="react-scripts" />
-
-namespace Models {
+declare namespace Models {
   interface CustomDynamicData {
     group: string;
     fields: CustomDynamicData.Field[];
@@ -15,6 +13,11 @@ namespace Models {
       type: FieldType;
       options?: Option[];
       conditions?: Condition;
+      request?: string;
+      request_token?: string;
+      request_key_label?: string;
+      request_key_extra_label?: string;
+      request_key_value?: string;
       required?: boolean;
       min?: number;
       max?: number;
@@ -54,6 +57,7 @@ namespace Models {
       | "string"
       | "masked"
       | "multicheck"
+      | "autocomplete";
 
     type FormListType = "string" | "number" | "select";
   }

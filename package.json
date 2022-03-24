@@ -17,8 +17,11 @@
   "dependencies": {
     "@mdi/js": "^6.6.95",
     "@mdi/react": "^1.5.0",
+    "@types/lodash": "^4.14.180",
     "antd": "^4.16.5",
-    "antd-mask-input": "^0.1.15"
+    "antd-mask-input": "^0.1.15",
+    "axios": "^0.26.1",
+    "lodash": "^4.17.21"
   },
   "peerDependencies": {
     "react": ">= 16.8.0 < 2",
