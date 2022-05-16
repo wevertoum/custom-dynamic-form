@@ -12,6 +12,7 @@ import {
   SubFormMaskedInput,
   SubFormAutoCompleteApi,
 } from '..'
+import SubFormTimePicker from '../SubFormTimePicker'
 
 interface Props {
   field: Models.CustomDynamicData.Field
@@ -66,6 +67,13 @@ const SelectFieldType: React.FC<Props> = ({
         )}
         {field.type === 'date' && (
           <SubFormDatePicker
+            key={fieldIndex}
+            disableAll={mode === 'in_page'}
+            field={field}
+          />
+        )}
+        {field.type === 'date' && (
+          <SubFormTimePicker
             key={fieldIndex}
             disableAll={mode === 'in_page'}
             field={field}
