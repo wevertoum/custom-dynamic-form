@@ -69,8 +69,10 @@
 .input-size {
   width: 100%;
 }
-.time-picker::-webkit-calendar-picker-indicator {
+.time-picker {
   width: 100px;
+}
+.time-picker::-webkit-calendar-picker-indicator {
   filter: invert(47%) sepia(6%) saturate(152%) hue-rotate(316deg)
     brightness(94%) contrast(84%);
 }

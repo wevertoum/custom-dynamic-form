@@ -72,7 +72,7 @@ const SelectFieldType: React.FC<Props> = ({
             field={field}
           />
         )}
-        {field.type === 'date' && (
+        {field.type === 'time' && (
           <SubFormTimePicker
             key={fieldIndex}
             disableAll={mode === 'in_page'}
