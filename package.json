@@ -1,6 +1,6 @@
 {
   "name": "custom-form-dynamic",
-  "version": "1.1.22",
+  "version": "1.1.24",
   "description": "um pacote que tem um form ant design maneirasso e coisas legaissss",
   "author": "weverton",
   "license": "Apache-2.0",
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "deploy": "rollup -c && npm publish"
   },
   "dependencies": {
     "@mdi/js": "^6.6.95",
